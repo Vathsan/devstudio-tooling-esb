@@ -189,7 +189,7 @@ public class CalculatorMediatorItemProvider extends MediatorItemProvider {
         newChildDescriptors.add
             (createChildParameter
                 (EsbPackage.Literals.CALCULATOR_MEDIATOR__OUTPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createCallMediatorOutputConnector()));
+                 EsbFactory.eINSTANCE.createCalculatorMediatorOutputConnector()));
 
         newChildDescriptors.add
             (createChildParameter

@@ -3572,7 +3572,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="CalculatorMediator" eSuperTypes="#//Mediator">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inputConnector" eType="#//CalculatorMediatorInputConnector"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="outputConnector" eType="#//CallMediatorOutputConnector"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputConnector" eType="#//CalculatorMediatorOutputConnector"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="serviceType" eType="#//ServiceType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="calculatorMediatorProperties"

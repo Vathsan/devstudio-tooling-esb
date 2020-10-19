@@ -72,12 +72,12 @@ public interface CalculatorMediator extends Mediator {
      * </p>
      * <!-- end-user-doc -->
      * @return the value of the '<em>Output Connector</em>' containment reference.
-     * @see #setOutputConnector(CallMediatorOutputConnector)
+     * @see #setOutputConnector(CalculatorMediatorOutputConnector)
      * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getCalculatorMediator_OutputConnector()
      * @model containment="true"
      * @generated
      */
-    CallMediatorOutputConnector getOutputConnector();
+    CalculatorMediatorOutputConnector getOutputConnector();
 
     /**
      * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediator#getOutputConnector <em>Output Connector</em>}' containment reference.
@@ -87,7 +87,7 @@ public interface CalculatorMediator extends Mediator {
      * @see #getOutputConnector()
      * @generated
      */
-    void setOutputConnector(CallMediatorOutputConnector value);
+    void setOutputConnector(CalculatorMediatorOutputConnector value);
 
     /**
      * Returns the value of the '<em><b>Service Type</b></em>' attribute.

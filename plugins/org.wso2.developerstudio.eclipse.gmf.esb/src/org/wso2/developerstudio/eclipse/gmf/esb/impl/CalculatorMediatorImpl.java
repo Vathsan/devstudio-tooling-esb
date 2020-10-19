@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediator;
 import org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorInputConnector;
+import org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorOutputConnector;
 import org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorProperty;
 import org.wso2.developerstudio.eclipse.gmf.esb.CallMediatorOutputConnector;
 import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
@@ -72,7 +73,7 @@ public class CalculatorMediatorImpl extends MediatorImpl implements CalculatorMe
      * @generated
      * @ordered
      */
-    protected CallMediatorOutputConnector outputConnector;
+    protected CalculatorMediatorOutputConnector outputConnector;
 
     /**
      * The default value of the '{@link #getServiceType() <em>Service Type</em>}' attribute.
@@ -171,7 +172,7 @@ public class CalculatorMediatorImpl extends MediatorImpl implements CalculatorMe
      * <!-- end-user-doc -->
      * @generated
      */
-    public CallMediatorOutputConnector getOutputConnector() {
+    public CalculatorMediatorOutputConnector getOutputConnector() {
         return outputConnector;
     }
 
@@ -180,8 +181,8 @@ public class CalculatorMediatorImpl extends MediatorImpl implements CalculatorMe
      * <!-- end-user-doc -->
      * @generated
      */
-    public NotificationChain basicSetOutputConnector(CallMediatorOutputConnector newOutputConnector, NotificationChain msgs) {
-        CallMediatorOutputConnector oldOutputConnector = outputConnector;
+    public NotificationChain basicSetOutputConnector(CalculatorMediatorOutputConnector newOutputConnector, NotificationChain msgs) {
+        CalculatorMediatorOutputConnector oldOutputConnector = outputConnector;
         outputConnector = newOutputConnector;
         if (eNotificationRequired()) {
             ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CALCULATOR_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
@@ -195,7 +196,7 @@ public class CalculatorMediatorImpl extends MediatorImpl implements CalculatorMe
      * <!-- end-user-doc -->
      * @generated
      */
-    public void setOutputConnector(CallMediatorOutputConnector newOutputConnector) {
+    public void setOutputConnector(CalculatorMediatorOutputConnector newOutputConnector) {
         if (newOutputConnector != outputConnector) {
             NotificationChain msgs = null;
             if (outputConnector != null)
@@ -293,7 +294,7 @@ public class CalculatorMediatorImpl extends MediatorImpl implements CalculatorMe
                 setInputConnector((CalculatorMediatorInputConnector)newValue);
                 return;
             case EsbPackage.CALCULATOR_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((CallMediatorOutputConnector)newValue);
+                setOutputConnector((CalculatorMediatorOutputConnector)newValue);
                 return;
             case EsbPackage.CALCULATOR_MEDIATOR__SERVICE_TYPE:
                 setServiceType((ServiceType)newValue);
@@ -318,7 +319,7 @@ public class CalculatorMediatorImpl extends MediatorImpl implements CalculatorMe
                 setInputConnector((CalculatorMediatorInputConnector)null);
                 return;
             case EsbPackage.CALCULATOR_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((CallMediatorOutputConnector)null);
+                setOutputConnector((CalculatorMediatorOutputConnector)null);
                 return;
             case EsbPackage.CALCULATOR_MEDIATOR__SERVICE_TYPE:
                 setServiceType(SERVICE_TYPE_EDEFAULT);

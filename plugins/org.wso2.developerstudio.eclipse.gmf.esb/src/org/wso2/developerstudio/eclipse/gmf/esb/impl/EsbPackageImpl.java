@@ -24585,7 +24585,7 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 
         initEClass(calculatorMediatorEClass, CalculatorMediator.class, "CalculatorMediator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         initEReference(getCalculatorMediator_InputConnector(), this.getCalculatorMediatorInputConnector(), null, "inputConnector", null, 0, 1, CalculatorMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        initEReference(getCalculatorMediator_OutputConnector(), this.getCallMediatorOutputConnector(), null, "outputConnector", null, 0, 1, CalculatorMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getCalculatorMediator_OutputConnector(), this.getCalculatorMediatorOutputConnector(), null, "outputConnector", null, 0, 1, CalculatorMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getCalculatorMediator_ServiceType(), this.getServiceType(), "serviceType", null, 0, 1, CalculatorMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEReference(getCalculatorMediator_CalculatorMediatorProperties(), this.getCalculatorMediatorProperty(), null, "calculatorMediatorProperties", null, 0, -1, CalculatorMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
