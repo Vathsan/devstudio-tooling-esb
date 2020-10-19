@@ -2475,6 +2475,35 @@
           accessor="getFigureJsonTransformMediatorDescriptionFigure"
           figure="//@figures.0/@descriptors.120/@actualFigure/@children.1"/>
     </descriptors>
+    <descriptors
+        name="CalculatorMediatorFigure">
+      <actualFigure
+          xsi:type="gmfgraph:CustomFigure"
+          name="CalculatorMediatorGraphicalFigure"
+          qualifiedClassName="org.wso2.developerstudio.eclipse.gmf.esb.diagram.custom.EsbGraphicalShape">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"/>
+        <backgroundColor
+            xsi:type="gmfgraph:RGBColor"
+            red="230"
+            green="230"
+            blue="230"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="CalculatorMediatorPropertyLabel"
+            text="&lt;...>"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="CalculatorMediatorDescriptionFigure"
+            text="&lt;...>"/>
+      </actualFigure>
+      <accessors
+          accessor="getFigureCalculatorMediatorPropertyLabel"
+          figure="//@figures.0/@descriptors.121/@actualFigure/@children.0"/>
+      <accessors
+          accessor="getFigureCalculatorMediatorDescriptionFigure"
+          figure="//@figures.0/@descriptors.121/@actualFigure/@children.1"/>
+    </descriptors>
   </figures>
   <nodes
       name="EsbServer"
@@ -3541,6 +3570,17 @@
       name="JsonTransformMediatorOutputConnector"
       figure="EastPointerFigure"
       affixedParentSide="EAST"/>
+  <nodes
+      name="CalculatorMediator"
+      figure="CalculatorMediatorFigure"/>
+  <nodes
+      name="CalculatorMediatorInputConnector"
+      figure="EastPointerFigure"
+      affixedParentSide="WEST"/>
+  <nodes
+      name="CalculatorMediatorOutputConnector"
+      figure="EastPointerFigure"
+      affixedParentSide="EAST"/>
   <connections
       name="EsbLink"
       figure="PlainConnectionFigure"/>
@@ -4039,4 +4079,14 @@
       figure="JsonTransformMediatorFigure"
       elementIcon="false"
       accessor="//@figures.0/@descriptors.120/@accessors.1"/>
+  <labels
+      name="CalculatorMediatorName"
+      figure="CalculatorMediatorFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.121/@accessors.0"/>
+  <labels
+      name="CalculatorMediatorDescription"
+      figure="CalculatorMediatorFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.121/@accessors.1"/>
 </gmfgraph:Canvas>
