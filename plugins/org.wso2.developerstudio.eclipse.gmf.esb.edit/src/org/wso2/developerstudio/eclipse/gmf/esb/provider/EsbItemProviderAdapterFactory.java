@@ -4702,6 +4702,98 @@ public class EsbItemProviderAdapterFactory extends EsbAdapterFactory
     }
 
     /**
+     * This keeps track of the one adapter used for all {@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediator} instances.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected CalculatorMediatorItemProvider calculatorMediatorItemProvider;
+
+    /**
+     * This creates an adapter for a {@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediator}.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+    public Adapter createCalculatorMediatorAdapter() {
+        if (calculatorMediatorItemProvider == null) {
+            calculatorMediatorItemProvider = new CalculatorMediatorItemProvider(this);
+        }
+
+        return calculatorMediatorItemProvider;
+    }
+
+    /**
+     * This keeps track of the one adapter used for all {@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorOutputConnector} instances.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected CalculatorMediatorOutputConnectorItemProvider calculatorMediatorOutputConnectorItemProvider;
+
+    /**
+     * This creates an adapter for a {@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorOutputConnector}.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+    public Adapter createCalculatorMediatorOutputConnectorAdapter() {
+        if (calculatorMediatorOutputConnectorItemProvider == null) {
+            calculatorMediatorOutputConnectorItemProvider = new CalculatorMediatorOutputConnectorItemProvider(this);
+        }
+
+        return calculatorMediatorOutputConnectorItemProvider;
+    }
+
+    /**
+     * This keeps track of the one adapter used for all {@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorInputConnector} instances.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected CalculatorMediatorInputConnectorItemProvider calculatorMediatorInputConnectorItemProvider;
+
+    /**
+     * This creates an adapter for a {@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorInputConnector}.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+    public Adapter createCalculatorMediatorInputConnectorAdapter() {
+        if (calculatorMediatorInputConnectorItemProvider == null) {
+            calculatorMediatorInputConnectorItemProvider = new CalculatorMediatorInputConnectorItemProvider(this);
+        }
+
+        return calculatorMediatorInputConnectorItemProvider;
+    }
+
+    /**
+     * This keeps track of the one adapter used for all {@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorProperty} instances.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected CalculatorMediatorPropertyItemProvider calculatorMediatorPropertyItemProvider;
+
+    /**
+     * This creates an adapter for a {@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorProperty}.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+    public Adapter createCalculatorMediatorPropertyAdapter() {
+        if (calculatorMediatorPropertyItemProvider == null) {
+            calculatorMediatorPropertyItemProvider = new CalculatorMediatorPropertyItemProvider(this);
+        }
+
+        return calculatorMediatorPropertyItemProvider;
+    }
+
+    /**
      * This keeps track of the one adapter used for all {@link org.wso2.developerstudio.eclipse.gmf.esb.ScriptMediator} instances.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -8829,6 +8921,10 @@ public class EsbItemProviderAdapterFactory extends EsbAdapterFactory
         if (jsonTransformMediatorOutputConnectorItemProvider != null) jsonTransformMediatorOutputConnectorItemProvider.dispose();
         if (jsonTransformMediatorInputConnectorItemProvider != null) jsonTransformMediatorInputConnectorItemProvider.dispose();
         if (jsonTransformMediatorPropertyItemProvider != null) jsonTransformMediatorPropertyItemProvider.dispose();
+        if (calculatorMediatorItemProvider != null) calculatorMediatorItemProvider.dispose();
+        if (calculatorMediatorOutputConnectorItemProvider != null) calculatorMediatorOutputConnectorItemProvider.dispose();
+        if (calculatorMediatorInputConnectorItemProvider != null) calculatorMediatorInputConnectorItemProvider.dispose();
+        if (calculatorMediatorPropertyItemProvider != null) calculatorMediatorPropertyItemProvider.dispose();
     }
 
 }

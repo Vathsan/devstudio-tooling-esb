@@ -419,6 +419,10 @@ public class EsbFactoryImpl extends EFactoryImpl implements EsbFactory {
             case EsbPackage.JSON_TRANSFORM_MEDIATOR_OUTPUT_CONNECTOR: return createJsonTransformMediatorOutputConnector();
             case EsbPackage.JSON_TRANSFORM_MEDIATOR_INPUT_CONNECTOR: return createJsonTransformMediatorInputConnector();
             case EsbPackage.JSON_TRANSFORM_MEDIATOR_PROPERTY: return createJsonTransformMediatorProperty();
+            case EsbPackage.CALCULATOR_MEDIATOR: return createCalculatorMediator();
+            case EsbPackage.CALCULATOR_MEDIATOR_OUTPUT_CONNECTOR: return createCalculatorMediatorOutputConnector();
+            case EsbPackage.CALCULATOR_MEDIATOR_INPUT_CONNECTOR: return createCalculatorMediatorInputConnector();
+            case EsbPackage.CALCULATOR_MEDIATOR_PROPERTY: return createCalculatorMediatorProperty();
             default:
                 throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
         }
@@ -705,6 +709,8 @@ public class EsbFactoryImpl extends EFactoryImpl implements EsbFactory {
                 return createCacheMediatorTypeFromString(eDataType, initialValue);
             case EsbPackage.PAYLOAD_FACTORY_EVALUATOR_TYPE:
                 return createPayloadFactoryEvaluatorTypeFromString(eDataType, initialValue);
+            case EsbPackage.SERVICE_TYPE:
+                return createServiceTypeFromString(eDataType, initialValue);
             case EsbPackage.MAP:
                 return createMapFromString(eDataType, initialValue);
             default:
@@ -993,6 +999,8 @@ public class EsbFactoryImpl extends EFactoryImpl implements EsbFactory {
                 return convertCacheMediatorTypeToString(eDataType, instanceValue);
             case EsbPackage.PAYLOAD_FACTORY_EVALUATOR_TYPE:
                 return convertPayloadFactoryEvaluatorTypeToString(eDataType, instanceValue);
+            case EsbPackage.SERVICE_TYPE:
+                return convertServiceTypeToString(eDataType, instanceValue);
             case EsbPackage.MAP:
                 return convertMapToString(eDataType, instanceValue);
             default:
@@ -3204,6 +3212,46 @@ public class EsbFactoryImpl extends EFactoryImpl implements EsbFactory {
     public JsonTransformMediatorProperty createJsonTransformMediatorProperty() {
         JsonTransformMediatorPropertyImpl jsonTransformMediatorProperty = new JsonTransformMediatorPropertyImpl();
         return jsonTransformMediatorProperty;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CalculatorMediator createCalculatorMediator() {
+        CalculatorMediatorImpl calculatorMediator = new CalculatorMediatorImpl();
+        return calculatorMediator;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CalculatorMediatorOutputConnector createCalculatorMediatorOutputConnector() {
+        CalculatorMediatorOutputConnectorImpl calculatorMediatorOutputConnector = new CalculatorMediatorOutputConnectorImpl();
+        return calculatorMediatorOutputConnector;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CalculatorMediatorInputConnector createCalculatorMediatorInputConnector() {
+        CalculatorMediatorInputConnectorImpl calculatorMediatorInputConnector = new CalculatorMediatorInputConnectorImpl();
+        return calculatorMediatorInputConnector;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CalculatorMediatorProperty createCalculatorMediatorProperty() {
+        CalculatorMediatorPropertyImpl calculatorMediatorProperty = new CalculatorMediatorPropertyImpl();
+        return calculatorMediatorProperty;
     }
 
     /**
@@ -7672,6 +7720,26 @@ public class EsbFactoryImpl extends EFactoryImpl implements EsbFactory {
      * @generated
      */
     public String convertPayloadFactoryEvaluatorTypeToString(EDataType eDataType, Object instanceValue) {
+        return instanceValue == null ? null : instanceValue.toString();
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ServiceType createServiceTypeFromString(EDataType eDataType, String initialValue) {
+        ServiceType result = ServiceType.get(initialValue);
+        if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+        return result;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public String convertServiceTypeToString(EDataType eDataType, Object instanceValue) {
         return instanceValue == null ? null : instanceValue.toString();
     }
 

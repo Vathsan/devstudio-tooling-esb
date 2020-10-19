@@ -811,6 +811,10 @@
       <genEnumLiterals ecoreEnumLiteral="esb.ecore#//PayloadFactoryEvaluatorType/XML"/>
       <genEnumLiterals ecoreEnumLiteral="esb.ecore#//PayloadFactoryEvaluatorType/JSON"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="esb.ecore#//ServiceType">
+      <genEnumLiterals ecoreEnumLiteral="esb.ecore#//ServiceType/BODY"/>
+      <genEnumLiterals ecoreEnumLiteral="esb.ecore#//ServiceType/INLINE"/>
+    </genEnums>
     <genDataTypes ecoreDataType="esb.ecore#//Map">
       <genTypeParameters ecoreTypeParameter="esb.ecore#//Map/K"/>
       <genTypeParameters ecoreTypeParameter="esb.ecore#//Map/V"/>
@@ -2695,5 +2699,14 @@
     <genClasses ecoreClass="esb.ecore#//JsonTransformMediatorOutputConnector"/>
     <genClasses ecoreClass="esb.ecore#//JsonTransformMediatorInputConnector"/>
     <genClasses ecoreClass="esb.ecore#//JsonTransformMediatorProperty"/>
+    <genClasses ecoreClass="esb.ecore#//CalculatorMediator">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference esb.ecore#//CalculatorMediator/inputConnector"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference esb.ecore#//CalculatorMediator/outputConnector"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esb.ecore#//CalculatorMediator/serviceType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference esb.ecore#//CalculatorMediator/calculatorMediatorProperties"/>
+    </genClasses>
+    <genClasses ecoreClass="esb.ecore#//CalculatorMediatorOutputConnector"/>
+    <genClasses ecoreClass="esb.ecore#//CalculatorMediatorInputConnector"/>
+    <genClasses ecoreClass="esb.ecore#//CalculatorMediatorProperty"/>
   </genPackages>
 </genmodel:GenModel>

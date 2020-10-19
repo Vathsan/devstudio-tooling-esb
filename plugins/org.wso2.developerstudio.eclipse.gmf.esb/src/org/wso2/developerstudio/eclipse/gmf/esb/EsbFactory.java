@@ -1831,6 +1831,42 @@ public interface EsbFactory extends EFactory {
     JsonTransformMediatorProperty createJsonTransformMediatorProperty();
 
     /**
+     * Returns a new object of class '<em>Calculator Mediator</em>'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return a new object of class '<em>Calculator Mediator</em>'.
+     * @generated
+     */
+    CalculatorMediator createCalculatorMediator();
+
+    /**
+     * Returns a new object of class '<em>Calculator Mediator Output Connector</em>'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return a new object of class '<em>Calculator Mediator Output Connector</em>'.
+     * @generated
+     */
+    CalculatorMediatorOutputConnector createCalculatorMediatorOutputConnector();
+
+    /**
+     * Returns a new object of class '<em>Calculator Mediator Input Connector</em>'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return a new object of class '<em>Calculator Mediator Input Connector</em>'.
+     * @generated
+     */
+    CalculatorMediatorInputConnector createCalculatorMediatorInputConnector();
+
+    /**
+     * Returns a new object of class '<em>Calculator Mediator Property</em>'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return a new object of class '<em>Calculator Mediator Property</em>'.
+     * @generated
+     */
+    CalculatorMediatorProperty createCalculatorMediatorProperty();
+
+    /**
      * Returns a new object of class '<em>Script Mediator</em>'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->

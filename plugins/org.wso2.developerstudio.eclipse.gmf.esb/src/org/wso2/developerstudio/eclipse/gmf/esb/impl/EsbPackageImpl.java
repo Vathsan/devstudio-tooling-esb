@@ -82,6 +82,10 @@ import org.wso2.developerstudio.eclipse.gmf.esb.CacheScope;
 import org.wso2.developerstudio.eclipse.gmf.esb.CacheScopeType;
 import org.wso2.developerstudio.eclipse.gmf.esb.CacheSequenceType;
 import org.wso2.developerstudio.eclipse.gmf.esb.CacheType;
+import org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediator;
+import org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorInputConnector;
+import org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorOutputConnector;
+import org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorProperty;
 import org.wso2.developerstudio.eclipse.gmf.esb.CallMediator;
 import org.wso2.developerstudio.eclipse.gmf.esb.CallMediatorEndpointOutputConnector;
 import org.wso2.developerstudio.eclipse.gmf.esb.CallMediatorEndpointType;
@@ -438,6 +442,7 @@ import org.wso2.developerstudio.eclipse.gmf.esb.SequenceType;
 import org.wso2.developerstudio.eclipse.gmf.esb.Sequences;
 import org.wso2.developerstudio.eclipse.gmf.esb.SequencesInputConnector;
 import org.wso2.developerstudio.eclipse.gmf.esb.SequencesOutputConnector;
+import org.wso2.developerstudio.eclipse.gmf.esb.ServiceType;
 import org.wso2.developerstudio.eclipse.gmf.esb.Session;
 import org.wso2.developerstudio.eclipse.gmf.esb.SmooksIODataType;
 import org.wso2.developerstudio.eclipse.gmf.esb.SmooksInConfiguration;
@@ -2040,6 +2045,34 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
      * @generated
      */
     private EClass jsonTransformMediatorPropertyEClass = null;
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass calculatorMediatorEClass = null;
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass calculatorMediatorOutputConnectorEClass = null;
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass calculatorMediatorInputConnectorEClass = null;
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass calculatorMediatorPropertyEClass = null;
 
     /**
      * <!-- begin-user-doc -->
@@ -4098,6 +4131,13 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
      * @generated
      */
     private EEnum payloadFactoryEvaluatorTypeEEnum = null;
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EEnum serviceTypeEEnum = null;
 
     /**
      * <!-- begin-user-doc -->
@@ -13154,6 +13194,78 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
      * <!-- end-user-doc -->
      * @generated
      */
+    public EClass getCalculatorMediator() {
+        return calculatorMediatorEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EReference getCalculatorMediator_InputConnector() {
+        return (EReference)calculatorMediatorEClass.getEStructuralFeatures().get(0);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EReference getCalculatorMediator_OutputConnector() {
+        return (EReference)calculatorMediatorEClass.getEStructuralFeatures().get(1);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getCalculatorMediator_ServiceType() {
+        return (EAttribute)calculatorMediatorEClass.getEStructuralFeatures().get(2);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EReference getCalculatorMediator_CalculatorMediatorProperties() {
+        return (EReference)calculatorMediatorEClass.getEStructuralFeatures().get(3);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getCalculatorMediatorOutputConnector() {
+        return calculatorMediatorOutputConnectorEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getCalculatorMediatorInputConnector() {
+        return calculatorMediatorInputConnectorEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getCalculatorMediatorProperty() {
+        return calculatorMediatorPropertyEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     public EEnum getArtifactType() {
         return artifactTypeEEnum;
     }
@@ -19913,6 +20025,15 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
      * <!-- end-user-doc -->
      * @generated
      */
+    public EEnum getServiceType() {
+        return serviceTypeEEnum;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     public EDataType getMap() {
         return mapEDataType;
     }
@@ -21928,6 +22049,18 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 
         jsonTransformMediatorPropertyEClass = createEClass(JSON_TRANSFORM_MEDIATOR_PROPERTY);
 
+        calculatorMediatorEClass = createEClass(CALCULATOR_MEDIATOR);
+        createEReference(calculatorMediatorEClass, CALCULATOR_MEDIATOR__INPUT_CONNECTOR);
+        createEReference(calculatorMediatorEClass, CALCULATOR_MEDIATOR__OUTPUT_CONNECTOR);
+        createEAttribute(calculatorMediatorEClass, CALCULATOR_MEDIATOR__SERVICE_TYPE);
+        createEReference(calculatorMediatorEClass, CALCULATOR_MEDIATOR__CALCULATOR_MEDIATOR_PROPERTIES);
+
+        calculatorMediatorOutputConnectorEClass = createEClass(CALCULATOR_MEDIATOR_OUTPUT_CONNECTOR);
+
+        calculatorMediatorInputConnectorEClass = createEClass(CALCULATOR_MEDIATOR_INPUT_CONNECTOR);
+
+        calculatorMediatorPropertyEClass = createEClass(CALCULATOR_MEDIATOR_PROPERTY);
+
         // Create enums
         artifactTypeEEnum = createEEnum(ARTIFACT_TYPE);
         callMediatorEndpointTypeEEnum = createEEnum(CALL_MEDIATOR_ENDPOINT_TYPE);
@@ -22065,6 +22198,7 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
         cacheImplementationTypeEEnum = createEEnum(CACHE_IMPLEMENTATION_TYPE);
         cacheMediatorTypeEEnum = createEEnum(CACHE_MEDIATOR_TYPE);
         payloadFactoryEvaluatorTypeEEnum = createEEnum(PAYLOAD_FACTORY_EVALUATOR_TYPE);
+        serviceTypeEEnum = createEEnum(SERVICE_TYPE);
 
         // Create data types
         mapEDataType = createEDataType(MAP);
@@ -22441,6 +22575,10 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
         jsonTransformMediatorOutputConnectorEClass.getESuperTypes().add(this.getOutputConnector());
         jsonTransformMediatorInputConnectorEClass.getESuperTypes().add(this.getInputConnector());
         jsonTransformMediatorPropertyEClass.getESuperTypes().add(this.getAbstractNameValueExpressionProperty());
+        calculatorMediatorEClass.getESuperTypes().add(this.getMediator());
+        calculatorMediatorOutputConnectorEClass.getESuperTypes().add(this.getOutputConnector());
+        calculatorMediatorInputConnectorEClass.getESuperTypes().add(this.getInputConnector());
+        calculatorMediatorPropertyEClass.getESuperTypes().add(this.getAbstractNameValueExpressionProperty());
 
         // Initialize classes and features; add operations and parameters
         initEClass(esbDiagramEClass, EsbDiagram.class, "EsbDiagram", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -24445,6 +24583,18 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 
         initEClass(jsonTransformMediatorPropertyEClass, JsonTransformMediatorProperty.class, "JsonTransformMediatorProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        initEClass(calculatorMediatorEClass, CalculatorMediator.class, "CalculatorMediator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        initEReference(getCalculatorMediator_InputConnector(), this.getCalculatorMediatorInputConnector(), null, "inputConnector", null, 0, 1, CalculatorMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getCalculatorMediator_OutputConnector(), this.getCallMediatorOutputConnector(), null, "outputConnector", null, 0, 1, CalculatorMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getCalculatorMediator_ServiceType(), this.getServiceType(), "serviceType", null, 0, 1, CalculatorMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getCalculatorMediator_CalculatorMediatorProperties(), this.getCalculatorMediatorProperty(), null, "calculatorMediatorProperties", null, 0, -1, CalculatorMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+        initEClass(calculatorMediatorOutputConnectorEClass, CalculatorMediatorOutputConnector.class, "CalculatorMediatorOutputConnector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        initEClass(calculatorMediatorInputConnectorEClass, CalculatorMediatorInputConnector.class, "CalculatorMediatorInputConnector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        initEClass(calculatorMediatorPropertyEClass, CalculatorMediatorProperty.class, "CalculatorMediatorProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
         // Initialize enums and add enum literals
         initEEnum(artifactTypeEEnum, ArtifactType.class, "ArtifactType");
         addEEnumLiteral(artifactTypeEEnum, ArtifactType.SYNAPSE_CONFIG);
@@ -25249,6 +25399,10 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
         initEEnum(payloadFactoryEvaluatorTypeEEnum, PayloadFactoryEvaluatorType.class, "PayloadFactoryEvaluatorType");
         addEEnumLiteral(payloadFactoryEvaluatorTypeEEnum, PayloadFactoryEvaluatorType.XML);
         addEEnumLiteral(payloadFactoryEvaluatorTypeEEnum, PayloadFactoryEvaluatorType.JSON);
+
+        initEEnum(serviceTypeEEnum, ServiceType.class, "ServiceType");
+        addEEnumLiteral(serviceTypeEEnum, ServiceType.BODY);
+        addEEnumLiteral(serviceTypeEEnum, ServiceType.INLINE);
 
         // Initialize data types
         initEDataType(mapEDataType, Map.class, "Map", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);

@@ -3569,4 +3569,20 @@
   <eClassifiers xsi:type="ecore:EClass" name="JsonTransformMediatorInputConnector"
       eSuperTypes="#//InputConnector"/>
   <eClassifiers xsi:type="ecore:EClass" name="JsonTransformMediatorProperty" eSuperTypes="#//AbstractNameValueExpressionProperty"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CalculatorMediator" eSuperTypes="#//Mediator">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inputConnector" eType="#//CalculatorMediatorInputConnector"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputConnector" eType="#//CallMediatorOutputConnector"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serviceType" eType="#//ServiceType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calculatorMediatorProperties"
+        upperBound="-1" eType="#//CalculatorMediatorProperty" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CalculatorMediatorOutputConnector" eSuperTypes="#//OutputConnector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CalculatorMediatorInputConnector" eSuperTypes="#//InputConnector"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="ServiceType">
+    <eLiterals name="BODY" literal="BODY"/>
+    <eLiterals name="INLINE" value="1" literal="INLINE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CalculatorMediatorProperty" eSuperTypes="#//AbstractNameValueExpressionProperty"/>
 </ecore:EPackage>

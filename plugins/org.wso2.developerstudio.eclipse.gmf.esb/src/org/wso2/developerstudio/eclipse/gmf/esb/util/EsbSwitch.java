@@ -2997,6 +2997,39 @@ public class EsbSwitch<T> extends Switch<T> {
                 if (result == null) result = defaultCase(theEObject);
                 return result;
             }
+            case EsbPackage.CALCULATOR_MEDIATOR: {
+                CalculatorMediator calculatorMediator = (CalculatorMediator)theEObject;
+                T result = caseCalculatorMediator(calculatorMediator);
+                if (result == null) result = caseMediator(calculatorMediator);
+                if (result == null) result = caseEsbElement(calculatorMediator);
+                if (result == null) result = caseEsbNode(calculatorMediator);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case EsbPackage.CALCULATOR_MEDIATOR_OUTPUT_CONNECTOR: {
+                CalculatorMediatorOutputConnector calculatorMediatorOutputConnector = (CalculatorMediatorOutputConnector)theEObject;
+                T result = caseCalculatorMediatorOutputConnector(calculatorMediatorOutputConnector);
+                if (result == null) result = caseOutputConnector(calculatorMediatorOutputConnector);
+                if (result == null) result = caseEsbConnector(calculatorMediatorOutputConnector);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case EsbPackage.CALCULATOR_MEDIATOR_INPUT_CONNECTOR: {
+                CalculatorMediatorInputConnector calculatorMediatorInputConnector = (CalculatorMediatorInputConnector)theEObject;
+                T result = caseCalculatorMediatorInputConnector(calculatorMediatorInputConnector);
+                if (result == null) result = caseInputConnector(calculatorMediatorInputConnector);
+                if (result == null) result = caseEsbConnector(calculatorMediatorInputConnector);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case EsbPackage.CALCULATOR_MEDIATOR_PROPERTY: {
+                CalculatorMediatorProperty calculatorMediatorProperty = (CalculatorMediatorProperty)theEObject;
+                T result = caseCalculatorMediatorProperty(calculatorMediatorProperty);
+                if (result == null) result = caseAbstractNameValueExpressionProperty(calculatorMediatorProperty);
+                if (result == null) result = caseEsbNode(calculatorMediatorProperty);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
             default: return defaultCase(theEObject);
         }
     }
@@ -6178,6 +6211,66 @@ public class EsbSwitch<T> extends Switch<T> {
      * @generated
      */
     public T caseJsonTransformMediatorProperty(JsonTransformMediatorProperty object) {
+        return null;
+    }
+
+    /**
+     * Returns the result of interpreting the object as an instance of '<em>Calculator Mediator</em>'.
+     * <!-- begin-user-doc -->
+     * This implementation returns null;
+     * returning a non-null result will terminate the switch.
+     * <!-- end-user-doc -->
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>Calculator Mediator</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+     * @generated
+     */
+    public T caseCalculatorMediator(CalculatorMediator object) {
+        return null;
+    }
+
+    /**
+     * Returns the result of interpreting the object as an instance of '<em>Calculator Mediator Output Connector</em>'.
+     * <!-- begin-user-doc -->
+     * This implementation returns null;
+     * returning a non-null result will terminate the switch.
+     * <!-- end-user-doc -->
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>Calculator Mediator Output Connector</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+     * @generated
+     */
+    public T caseCalculatorMediatorOutputConnector(CalculatorMediatorOutputConnector object) {
+        return null;
+    }
+
+    /**
+     * Returns the result of interpreting the object as an instance of '<em>Calculator Mediator Input Connector</em>'.
+     * <!-- begin-user-doc -->
+     * This implementation returns null;
+     * returning a non-null result will terminate the switch.
+     * <!-- end-user-doc -->
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>Calculator Mediator Input Connector</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+     * @generated
+     */
+    public T caseCalculatorMediatorInputConnector(CalculatorMediatorInputConnector object) {
+        return null;
+    }
+
+    /**
+     * Returns the result of interpreting the object as an instance of '<em>Calculator Mediator Property</em>'.
+     * <!-- begin-user-doc -->
+     * This implementation returns null;
+     * returning a non-null result will terminate the switch.
+     * <!-- end-user-doc -->
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>Calculator Mediator Property</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+     * @generated
+     */
+    public T caseCalculatorMediatorProperty(CalculatorMediatorProperty object) {
         return null;
     }
 

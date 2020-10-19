@@ -1553,6 +1553,22 @@ public class EsbAdapterFactory extends AdapterFactoryImpl {
                 return createJsonTransformMediatorPropertyAdapter();
             }
             @Override
+            public Adapter caseCalculatorMediator(CalculatorMediator object) {
+                return createCalculatorMediatorAdapter();
+            }
+            @Override
+            public Adapter caseCalculatorMediatorOutputConnector(CalculatorMediatorOutputConnector object) {
+                return createCalculatorMediatorOutputConnectorAdapter();
+            }
+            @Override
+            public Adapter caseCalculatorMediatorInputConnector(CalculatorMediatorInputConnector object) {
+                return createCalculatorMediatorInputConnectorAdapter();
+            }
+            @Override
+            public Adapter caseCalculatorMediatorProperty(CalculatorMediatorProperty object) {
+                return createCalculatorMediatorPropertyAdapter();
+            }
+            @Override
             public Adapter defaultCase(EObject object) {
                 return createEObjectAdapter();
             }
@@ -4537,6 +4553,62 @@ public class EsbAdapterFactory extends AdapterFactoryImpl {
      * @generated
      */
     public Adapter createJsonTransformMediatorPropertyAdapter() {
+        return null;
+    }
+
+    /**
+     * Creates a new adapter for an object of class '{@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediator <em>Calculator Mediator</em>}'.
+     * <!-- begin-user-doc -->
+     * This default implementation returns null so that we can easily ignore cases;
+     * it's useful to ignore a case when inheritance will catch all the cases anyway.
+     * <!-- end-user-doc -->
+     * @return the new adapter.
+     * @see org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediator
+     * @generated
+     */
+    public Adapter createCalculatorMediatorAdapter() {
+        return null;
+    }
+
+    /**
+     * Creates a new adapter for an object of class '{@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorOutputConnector <em>Calculator Mediator Output Connector</em>}'.
+     * <!-- begin-user-doc -->
+     * This default implementation returns null so that we can easily ignore cases;
+     * it's useful to ignore a case when inheritance will catch all the cases anyway.
+     * <!-- end-user-doc -->
+     * @return the new adapter.
+     * @see org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorOutputConnector
+     * @generated
+     */
+    public Adapter createCalculatorMediatorOutputConnectorAdapter() {
+        return null;
+    }
+
+    /**
+     * Creates a new adapter for an object of class '{@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorInputConnector <em>Calculator Mediator Input Connector</em>}'.
+     * <!-- begin-user-doc -->
+     * This default implementation returns null so that we can easily ignore cases;
+     * it's useful to ignore a case when inheritance will catch all the cases anyway.
+     * <!-- end-user-doc -->
+     * @return the new adapter.
+     * @see org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorInputConnector
+     * @generated
+     */
+    public Adapter createCalculatorMediatorInputConnectorAdapter() {
+        return null;
+    }
+
+    /**
+     * Creates a new adapter for an object of class '{@link org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorProperty <em>Calculator Mediator Property</em>}'.
+     * <!-- begin-user-doc -->
+     * This default implementation returns null so that we can easily ignore cases;
+     * it's useful to ignore a case when inheritance will catch all the cases anyway.
+     * <!-- end-user-doc -->
+     * @return the new adapter.
+     * @see org.wso2.developerstudio.eclipse.gmf.esb.CalculatorMediatorProperty
+     * @generated
+     */
+    public Adapter createCalculatorMediatorPropertyAdapter() {
         return null;
     }
 
